@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Splitter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="name">
+            <h1>SPLITTER</h1>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="input">
+            <div class="bill">
+                <div class="label">
+                    <label for="bill-input">Bill</label>
+                </div>
+
+                <div class="text">
+                    <input type="text" class="text-input" id="bill-input" placeholder="0.0">
+                    <img src="./icon-dollar.svg" alt="icon-dollar">
+                </div>
+            </div>
+
+            <div class="tip">
+                <div class="label">
+                    <label for="tip-input">Select Tip %</label>
+                </div>
+                <div class="button">
+                    <div class="btn tip">5%</div>
+                    <div class="btn tip">10%</div>
+                    <div class="btn tip btn-active">15%</div>
+                    <div class="btn tip">25%</div>
+                    <div class="btn tip">50%</div>
+                    <input type="text" class="text-input" id="tip-input" placeholder="Custom">
+                </div>
+            </div>
+
+            <div class="people">
+                <div class="label">
+                    <label for="people-input">Number of People</label>
+                    <div class="error">Can't be zero</div>
+                </div>
+
+                <div class="text">
+                    <input type="text" class="text-input" id="people-input" placeholder="1">
+                    <img src="./icon-person.svg" alt="people-icon">
+                </div>
+            </div>
+
+        </div>
+        <div class="output">
+            <div class="result">
+                <div class="output-result">
+                    <div class="title-wrapper">
+                        <div class="title">Tip Amount</div>
+                        <div class="per">/person</div>
+                        <div class="value">$4.27</div>
+                    </div>
+
+                    <div class="output-result">
+                        <div class="title-wrapper">
+                            <div class="title">Total</div>
+                            <div class="per">/person</div>
+                            <div class="value">$32.79</div>
+                </div>
+            </div>
+            <div class="btn reset">Reset</div>
+
+        </div>
+    </div>
+<script src="./cal.js"></script>
+
+</body>
+
+</html>

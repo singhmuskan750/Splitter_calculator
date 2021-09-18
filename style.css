@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 55%;
+   
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: rgb(199, 233, 233);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.name h1{
+    margin: 5rem 0 3.5rem 0;
+    color: rgb(32, 63, 63);
+}
+.card{
+    background-color: white;
+    width: 100%;
+    border-top-left-radius: 2.3rem;
+    border-top-right-radius: 2.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    gap: 3rem;
+    margin-left: 20%;
+    
+}
+.card .input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card .input .label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.card .input .label label{
+    color: rgb(102, 129, 129);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.error{
+    color: rgb(206, 141, 55);
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+}
+
+.show-error{
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.text-input{
+    background-color: rgb(236, 248, 248);
+    width: 100%;
+    border: none;
+    color: rgb(32, 63, 63);
+    border-radius: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: right;
+    padding: 0.5rem 2.3rem;
+    font-family: 'Merriweather', serif;
+}
+.text-input:focus {
+    outline: none;
+    border: 2px solid rgb(95, 192, 192)
+}
+
+.text{
+    position: relative;
+}
+.text img{
+    position: absolute;
+    left: 2rem;
+    top: 1.5rem;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.btn{
+    width: 45%;
+    text-align: center;
+    background-color: rgb(19, 56, 56);
+    color: white;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+.btn:hover{
+    background-color: rgb(159,232,223);
+}
+.btn-active{
+    background-color: rgb(58, 182, 182);
+    color: rgb(19, 56, 56);
+}
+.button .text-input{
+    width: 46%;
+    text-align: center;
+}
+
+.card .output{
+    background-color: rgb(19, 56, 56);
+    border-radius: 1.5rem;
+    padding: 2.2rem;
+    width: 100%;
+
+}
+
+
+.card .output .result .output-result{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.output .title{
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+
+.output  .per{
+    color: rgb(102, 129, 129);
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+.output .value{
+    color: rgb(58, 182, 182);
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+.output .btn{
+    width: 100%;
+    background-color: rgb(58, 182, 182);
+    color: rgb(19, 56, 56);
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3.4rem;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: rgb(159,232,223);
+}
+
+
+
+@media screen and (min-width: 1440px){
+    .card {
+        width: 64%;
+        flex-direction: row;
+        padding: 3.4rem;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.05), 0px 20px 30px rgba(0,0,0,0.05);
+        gap: 1.5rem;
+        border-radius: 2.5rem;
+        align-items: stretch;
+        
+    }
+    .card .label{
+        padding: 1rem 0;
+    }
+
+    .card .input{
+        width: 100%;
+        padding: 0 3.5rem 1.5rem 1.5rem;
+    
+    }
+
+    .card .input .button .btn{
+        width: 30.5%;
+    }
+    
+    
+    .card .input .button .btn .text-input{
+        width: 30.5%;
+    }
+
+    .card .output{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5rem;
+    }
+
+    .output .result .output-result .value{
+        font-size: 4.5rem;
+        margin: 0.5rem 0 2.4rem 0;
+
+
+    }
+}
